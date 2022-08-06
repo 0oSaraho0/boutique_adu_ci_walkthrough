@@ -1,4 +1,4 @@
-{% ;oad static%}
+{% load static %}
 
 <!doctype html>
 <html lang="en">
@@ -44,7 +44,7 @@
         {% block page_header %}
         {% endblock %}
 
-        {% content %}
+        {% block content %}
         {% endblock %}
 
         {% block postloadjs %}
