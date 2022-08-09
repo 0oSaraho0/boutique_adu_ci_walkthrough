@@ -61,6 +61,16 @@ body {
     background: #000 !important;
 }
 
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -81,6 +91,17 @@ body {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 0px;
+    }
+}
+
+/* pad the top a bit with the navbar collapsed on a mobile */
+
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 0;
+    }
+    .body {
+        height: calc(100vh - 116vh)
     }
 }
